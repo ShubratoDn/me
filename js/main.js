@@ -4,7 +4,18 @@ $(document).ready(function(){
     });
 
 
-    // Scroll
+    // ==============================
+    // SkiLL Bar
+    // ==============================
+    var skillDiv = document.getElementById('skill-div');
+    var eleTopPos = skillDiv.offsetTop + 100;
+    console.log(eleTopPos);
+
+
+
+    // ================================
+    // Scroll To Manipulate Navbar
+    // ================================
     let navbar = document.getElementById('myNavbar');
 
     window.onscroll = function() {scrollFunction()};
@@ -14,15 +25,29 @@ $(document).ready(function(){
             //  navbar
             navbar.classList.add('active');
 
-
-            // if(screen.width <=991){
-            //     logo.classList.add("d-n");
-            //     navTop.classList.add("d-n");
-            // }
         }else{
             navbar.classList.remove('active');
+        };
+
+
+        if(document.body.scrollTop > eleTopPos || document.documentElement.scrollTop > eleTopPos){
+            //  SKILLS
+            skillDiv.classList.add('active');
+        }else{
+            skillDiv.classList.remove('active');
         }
+        
+
     }
+
+
+
+
+    // STOP INSPACTING
+    // document.addEventListener('contextmenu', function(e) {
+    //     e.preventDefault();
+    // });
+
 
 
 });
