@@ -8,7 +8,7 @@ $(document).ready(function(){
     // SkiLL Bar
     // ==============================
     var skillDiv = document.getElementById('skill-div');
-    var eleTopPos = skillDiv.offsetTop + 100;
+    var eleTopPos = skillDiv.offsetTop + 150;
     console.log(eleTopPos);
 
 

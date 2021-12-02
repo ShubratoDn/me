@@ -12,8 +12,12 @@
     <!-- anim headline -->
     <link rel="stylesheet" href="css/anim-headline.css">
 
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5897f205a5.js" crossorigin="anonymous"></script>
+
     <!-- my style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body data-bs-spy="scroll" data-bs-offset="60" data-bs-target="#myNavbar">
@@ -29,13 +33,13 @@
             <!-- nav-items -->
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a href="#particles-js" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section3" class="nav-link">Section 3</a>
+                    <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="#section4" class="nav-link">Section 4</a>
@@ -46,40 +50,42 @@
     <!-- navbar ends -->
 
     <!-- Home section starts -->
-    <section id="particles-js" class="home">
-        <div class="container">
-            <div class="name">
-                <h1>Shubrato Debnath</h1>
-            </div>
+    <section id="home">
+        <div id="particles-js">
+            <div class="container">
+                <div class="name">
+                    <h1>Shubrato Debnath</h1>
+                </div>
 
-            <div class="anim-headline">
-                <!-- animated header -->
-                <div class="cd-intro">
-                    <span class="cd-headline letters rotate-2">
-                        <strong><span style="color: var(--dfcolor);">#</span></strong>
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible">WebDeveloper</b>
-                            <b>Consultor</b>
-                            <b>Web Designer</b>
+                <div class="anim-headline">
+                    <!-- animated header -->
+                    <div class="cd-intro">
+                        <span class="cd-headline letters rotate-2">
+                            <strong><span style="color: var(--dfcolor);">#</span></strong>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">WebDeveloper</b>
+                                <b>Consultor</b>
+                                <b>Web Designer</b>
+                            </span>
                         </span>
-                    </span>
-                </div> <!-- cd-intro -->
+                    </div> <!-- cd-intro -->
 
-                <div class="cd-intro">
-                    <span class="cd-headline slide">
-                        <strong><span style="color: var(--dfcolor);">#</span></strong>
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible">WebDesigner</b>
-                            <b>Web Developer</b>
-                            <b>Consultor</b>
+                    <div class="cd-intro">
+                        <span class="cd-headline slide">
+                            <strong><span style="color: var(--dfcolor);">#</span></strong>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">WebDesigner</b>
+                                <b>Web Developer</b>
+                                <b>Consultor</b>
+                            </span>
                         </span>
-                    </span>
-                </div> <!-- cd-intro -->
+                    </div> <!-- cd-intro -->
+
+                </div>
 
             </div>
 
         </div>
-
     </section>
     <!-- Home section Ends -->
 
@@ -98,17 +104,19 @@
                     <div class="about-left">
                         <!-- My image and Description -->
                         <div class="ab-l-top">
-                            <div class="col-5 pl-0">
-                                <!-- my image -->
-                                <img src="img/myPic.jpeg" alt="" class="img-fluid myImg">
-                            </div>
-                            <div class="col-7">
-                                <!-- my detail -->
-                                <div class="myDetail">
-                                    <p><strong>Name  :</strong>Shubrato Debnath</p>
-                                    <p><strong>Profile : </strong>Full stack Web Developer</p>
-                                    <p><strong>Email : </strong><a href="mailto:shubratodn44985@gmail.com">shubratodn44985@gmail.com</a></p>
-                                    <p><strong>Phone : </strong><a href="tel:+8801759458961">+8801759458961</a></p>
+                            <div class="row">
+                                <div class="col-sm-5 col-12 pl-0 text-center">
+                                    <!-- my image -->
+                                    <img src="img/myPic.jpeg" alt="" class="img-fluid myImg">
+                                </div>
+                                <div class="col-sm-7 col-12">
+                                    <!-- my detail -->
+                                    <div class="myDetail">
+                                        <p><strong>Name  :</strong>Shubrato Debnath</p>
+                                        <p><strong>Profile : </strong>Full stack Web Developer</p>
+                                        <p><strong>Email : </strong><a href="mailto:shubratodn44985@gmail.com">shubratodn44985@gmail.com</a></p>
+                                        <p><strong>Phone : </strong><a href="tel:+8801759458961">+8801759458961</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -186,6 +194,92 @@
         </div>
     </section>
     <!-- about me section Ends  -->
+
+    
+    <!-- Service section starts from here -->
+    <section id="services">
+        <div class="container pt-5">
+            <!-- div title -->
+            <div class="title text-center">
+                <h1>Services</h1>
+                <p class="text-muted">services that I provide</p>
+            </div>
+
+            <div class="service-boxes">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- service card -->
+                        <div class="service-card scard1">
+                            <div class="card-text">
+                                <!-- card text -->
+                                <div class="card-title">Web Design</div>
+                                <p class="card-desc">I can make you a facny website using <b>Html, CSS, js and other plugins</b></p>
+                            </div>
+                            <div class="card-icon">
+                                <!-- card icon -->
+                                <img src="img/web-design.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row flex-column">
+                            <!-- service card -->
+                            <div class="col-lg-4 col-md-12">
+                                <div class="service-card scard2">
+                                    <div class="card-text">
+                                        <!-- card text -->
+                                        <div class="card-title">Responsive Web Design</div>
+                                        <p class="card-desc">
+                                            One of speciality in my website is they all are responsive
+                                        </p>
+                                    </div>
+                                    <div class="card-icon">
+                                        <!-- card icon -->
+                                        <img src="img/responsive.png" alt="">
+                                    </div>
+                                </div>                               
+                            </div>
+                            <!-- service card -->
+                            <div class="col-lg-4 col-md-12">
+                                <div class="service-card scard3">
+                                    <div class="card-text">
+                                        <!-- card text -->
+                                        <div class="card-title">Logo Designer</div>
+                                        <p class="card-desc">
+                                            I make my own logo for my Websites
+                                        </p>
+                                    </div>
+                                    <div class="card-icon">
+                                        <!-- card icon -->
+                                        <img src="img/logo-ds.png" alt="">
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card scard4">
+                            <div class="card-text">
+                                <!-- card text -->
+                                <div class="card-title">Web Developer</div>
+                                <p class="card-desc">
+                                    I create full website including backend with PHP
+                                </p>
+                            </div>
+                            <div class="card-icon">
+                                <!-- card icon -->
+                                <img src="img/web-developer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section Ends here -->
+
+    
 
     <div class="container">
 
