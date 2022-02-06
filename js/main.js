@@ -48,6 +48,19 @@ $(document).ready(function(){
     //     e.preventDefault();
     // });
 
+    
+    // ===================
+    // VENOBOX PLUGIN
+    // ===================
+    $('.venobox').venobox({
+        // settings here
+
+        bgcolor:'none'
+    
+    });
+    
+ 
+
 
 
 });
